@@ -1,0 +1,13 @@
+[Unit]
+Description=Client component of the Chef systems integration framework
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=simple
+PIDFile=/run/chef/chef-client.pid
+ExecStart=/usr/bin/chef-client -d -p /run/chef/chef-client.pid
+ExecReload=/usr/bin/kill -HUP ${MAINPID}
+ExecStop=/usr/bin/kill ${MAINPID}
+
+[Install]
+WantedBy=multi-user.target
