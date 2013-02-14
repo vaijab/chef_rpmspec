@@ -8,7 +8,7 @@
 
 Summary: A systems integration framework 
 Name: %{gem_name}
-Version: 11.2.0
+Version: 11.4.0
 Release: 1%{?dist}
 Group: Development/Languages
 License: ASL 2.0
@@ -31,8 +31,7 @@ Requires: rubygem(ohai) >= 0.6.0
 Requires: rubygem(rest-client) >= 1.0.4
 Requires: rubygem(rest-client) < 1.7.0
 Requires: rubygem(json) >= 1.4.4
-Requires: rubygem(json) => 1.7.6
-Requires: rubygem(json) < 1.8
+Requires: rubygem(json) <= 1.7.7
 Requires: rubygem(yajl-ruby) => 1.1
 Requires: rubygem(yajl-ruby) < 2
 Requires: rubygem(net-ssh) => 2.6
