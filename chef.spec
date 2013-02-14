@@ -157,5 +157,8 @@ cp -a %{buildroot}%{gem_instdir}/distro/common/html/* \
 
 
 %changelog
+* Thu Feb 14 2013 Vaidas Jablonskis <jablonskis@gmail.com> - 11.4.0-1
+- Updated to chef 11.4.0
+
 * Wed Feb 13 2013 Vaidas Jablonskis <jablonskis@gmail.com> - 11.2.0-1
 - Initial package
